@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+// v0 by Vercel.
+// https://v0.dev/t/hFqFcoaMFJj
+-->
+
+<div class="flex flex-col min-h-[100dvh]">
+    <header class="px-4 lg:px-6 h-14 flex items-center">
+      <a class="flex items-center justify-center" href="#">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="h-6 w-6"
+        >
+          <path d="m11 17 2 2a1 1 0 1 0 3-3"></path>
+          <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"></path>
+          <path d="m21 3 1 11h-2"></path>
+          <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"></path>
+          <path d="M3 4h8"></path>
+        </svg>
+        <span class="sr-only">VCAN</span>
+      </a>
+      <nav class="ml-auto flex gap-4 sm:gap-6">
+        <a href="#" class="text-sm font-medium hover:underline underline-offset-4">
+          Volunteer
+        </a>
+        <a class="text-sm font-medium hover:underline underline-offset-4" href="#">
+          NGOs
+        </a>
+        <a class="text-sm font-medium hover:underline underline-offset-4" href="#">
+          About
+        </a>
+        <a class="text-sm font-medium hover:underline underline-offset-4" href="#">
+          Contact
+        </a>
+      </nav>
+    </header>
+    <main class="flex-1">
+      <section class="w-full py-12 md:py-24 lg:py-32">
+        <div class="container px-4 md:px-6">
+          <div class="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_550px]">
+            <div class="flex flex-col justify-center space-y-4">
+              <div class="space-y-2">
+                <h1 class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+                  Connect Volunteers with NGOs
+                </h1>
+                <p class="max-w-[600px] text-muted-foreground md:text-xl">
+                  VCAN is a platform that makes it easy for volunteers to find meaningful opportunities and for NGOs
+                  to manage their volunteer programs.
+                </p>
+              </div>
+              <div class="flex flex-col gap-2 min-[400px]:flex-row">
+                <a
+                  class="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                  href="#"
+                >
+                  Join as a Volunteer
+                </a>
+                <a
+                  href="#"
+                  class="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                >
+                  Register as an NGO
+                </a>
+              </div>
+            </div>
+            <img
+              src="/placeholder.svg"
+              width="550"
+              height="550"
+              alt="Hero"
+              class="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="w-full py-12 md:py-24 lg:py-32 bg-muted">
+        <div class="container px-4 md:px-6">
+          <div class="flex flex-col items-center justify-center space-y-4 text-center">
+            <div class="space-y-2">
+              <div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Key Features</div>
+              <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">Connecting Volunteers and NGOs</h2>
+              <p class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                VCAN provides a seamless platform for volunteers to discover meaningful opportunities and for NGOs to
+                manage their volunteer programs.
+              </p>
+            </div>
+          </div>
+          <div class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
+            <div class="flex flex-col justify-center space-y-4">
+              <ul class="grid gap-6">
+                <li>
+                  <div class="grid gap-1">
+                    <h3 class="text-xl font-bold">Easy Volunteer Matching</h3>
+                    <p class="text-muted-foreground">
+                      VCAN's intelligent matching algorithm connects volunteers with opportunities that align with
+                      their skills and interests.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="grid gap-1">
+                    <h3 class="text-xl font-bold">NGO Management Tools</h3>
+                    <p class="text-muted-foreground">
+                      NGOs can easily manage their volunteer programs, track hours, and communicate with their
+                      volunteers.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="grid gap-1">
+                    <h3 class="text-xl font-bold">Impact Tracking</h3>
+                    <p class="text-muted-foreground">
+                      VCAN provides powerful analytics and reporting tools to help NGOs measure the impact of their
+                      volunteer programs.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <img
+              src="/placeholder.svg"
+              width="550"
+              height="310"
+              alt="Features"
+              class="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="w-full py-12 md:py-24 lg:py-32">
+        <div class="container px-4 md:px-6">
+          <div class="flex flex-col items-center justify-center space-y-4 text-center">
+            <div class="space-y-2">
+              <div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm">Testimonials</div>
+              <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">What Our Users Say</h2>
+              <p class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                Hear from the volunteers and NGOs who have found success through VCAN.
+              </p>
+            </div>
+          </div>
+          <div class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
+            <div class="rounded-lg border bg-card text-card-foreground p-6 shadow-md" data-v0-t="card">
+              <div class="flex flex-col space-y-1.5 p-6">
+                <span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full">
+                  <span class="flex h-full w-full items-center justify-center rounded-full bg-muted">JD</span>
+                </span>
+                <div>
+                  <h4 class="text-lg font-semibold">John Doe</h4>
+                  <p class="text-sm text-muted-foreground">Volunteer</p>
+                </div>
+              </div>
+              <div class="p-6">
+                <blockquote class="text-muted-foreground">
+                  "VCAN made it so easy for me to find the perfect volunteer\n opportunity that aligned with my skills
+                  and interests. I'm\n making a real difference in my community."
+                </blockquote>
+              </div>
+            </div>
+            <div class="rounded-lg border bg-card text-card-foreground p-6 shadow-md" data-v0-t="card">
+              <div class="flex flex-col space-y-1.5 p-6">
+                <span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full">
+                  <span class="flex h-full w-full items-center justify-center rounded-full bg-muted">SA</span>
+                </span>
+                <div>
+                  <h4 class="text-lg font-semibold">Sarah Anderson</h4>
+                  <p class="text-sm text-muted-foreground">NGO Manager</p>
+                </div>
+              </div>
+              <div class="p-6">
+                <blockquote class="text-muted-foreground">
+                  "VCAN has been a game-changer for our NGO. The volunteer\n management tools make it easy to recruit,
+                  onboard, and\n retain amazing volunteers who are passionate about our\n cause."
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="w-full py-12 md:py-24 lg:py-32 bg-muted">
+        <div class="container px-4 md:px-6">
+          <div class="grid items-center gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
+            <div class="space-y-2">
+              <div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm">About VCAN</div>
+              <h2 class="text-3xl font-bold tracking-tighter md:text-4xl/tight">Our Mission and Values</h2>
+              <p class="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                VCAN was founded with the mission of connecting volunteers with meaningful opportunities to make a
+                positive impact in their communities. We believe in the power of volunteering to transform lives and
+                create a more just and equitable world.
+              </p>
+              <div class="flex flex-col gap-2 min-[400px]:flex-row">
+                <a
+                  href="#"
+                  class="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                >
+                  Learn More
+                </a>
+                <a
+                  href="#"
+                  class="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                >
+                  Contact Us
+                </a>
+              </div>
+            </div>
+            <img
+              src="/placeholder.svg"
+              width="550"
+              height="310"
+              alt="About"
+              class="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
+      <p class="text-xs text-muted-foreground">© 2024 VCAN. All rights reserved.</p>
+      <nav class="sm:ml-auto flex gap-4 sm:gap-6">
+        <a class="text-xs hover:underline underline-offset-4" href="#">
+          Terms of Service
+        </a>
+      </nav>
+    </footer>
+  </div>
+</body>
+</html>
