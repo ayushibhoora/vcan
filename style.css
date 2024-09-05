@@ -1,4 +1,92 @@
-#box{
-    border-radius: 1rem;
-    
+#box {
+  border-radius: 1rem;
+}
+/* ---------------------------card---------------------- */
+/* From Uiverse.io by alexruix */
+.card {
+  
+  position: relative;
+  overflow: visible;
+  width: 240px;
+    height: 350px;
+    border-radius: 15px;
+    background: #f5f5f5;
+    padding: 1rem;
+    border: 2px solid black;
+    transition: 0.5s ease-out;
+  margin-left: 1rem; /* Default margin for mobile */
+}
+
+/* Tablet view */
+@media (min-width: 768px) {
+  .card {
+    margin-left: 4rem; /* Slightly larger margin on tablets */
+  }
+}
+
+/* Desktop view */
+@media (min-width: 1024px) {
+  .card {
+    margin-left: 5rem; /* Larger margin on desktops */
+    padding: 0rem;
+  }
+}
+
+/* Large desktop view */
+@media (min-width: 1280px) {
+  .card {
+    margin-left: 5rem; /* Extra large margin for large screens */
+    padding: 1rem;
+  }
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* This allows cards to wrap on smaller screens */
+    gap: 1.3rem; /* Space between cards */
+    justify-content: center; /* Center the cards */
+}
+.card-details {
+  color: black;
+  height: 100%;
+  gap: 0.5em;
+  display: grid;
+  place-content: center;
+}
+
+.card-button {
+  transform: translate(-50%, 125%);
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #000000;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+
+.text-body {
+  color: rgb(134, 134, 134);
+}
+
+/*Text*/
+.text-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/*Hover*/
+.card:hover {
+  border-color: #000000;
+  box-shadow: 0 4px 18px 0 black;
+}
+
+.card:hover .card-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
 }
