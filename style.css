@@ -1,33 +1,38 @@
 #box {
   border-radius: 1rem;
 }
+
 /* ---------------------------card---------------------- */
 /* From Uiverse.io by alexruix */
 .card {
-  
   position: relative;
   overflow: visible;
   width: 240px;
-    height: 350px;
-    border-radius: 15px;
-    background: #f5f5f5;
-    padding: 1rem;
-    border: 2px solid black;
-    transition: 0.5s ease-out;
-  margin-left: 1rem; /* Default margin for mobile */
+  height: 350px;
+  border-radius: 15px;
+  background: #f5f5f5;
+  padding: 1rem;
+  border: 2px solid black;
+  transition: 0.5s ease-out;
+  margin-left: 1rem;
+  /* Default margin for mobile */
+  margin-top: 5rem; /* Adjust margin-top to account for the navbar */
 }
+
 
 /* Tablet view */
 @media (min-width: 768px) {
   .card {
-    margin-left: 4rem; /* Slightly larger margin on tablets */
+    margin-left: 4rem;
+    /* Slightly larger margin on tablets */
   }
 }
 
 /* Desktop view */
 @media (min-width: 1024px) {
   .card {
-    margin-left: 5rem; /* Larger margin on desktops */
+    margin-left: 5rem;
+    /* Larger margin on desktops */
     padding: 0rem;
   }
 }
@@ -35,17 +40,22 @@
 /* Large desktop view */
 @media (min-width: 1280px) {
   .card {
-    margin-left: 5rem; /* Extra large margin for large screens */
+    margin-left: 5rem;
+    /* Extra large margin for large screens */
     padding: 1rem;
   }
 }
 
 .card-container {
-    display: flex;
-    flex-wrap: wrap; /* This allows cards to wrap on smaller screens */
-    gap: 1.3rem; /* Space between cards */
-    justify-content: center; /* Center the cards */
+  display: flex;
+  flex-wrap: wrap;
+  /* This allows cards to wrap on smaller screens */
+  gap: 1.3rem;
+  /* Space between cards */
+  justify-content: center;
+  /* Center the cards */
 }
+
 .card-details {
   color: black;
   height: 100%;
