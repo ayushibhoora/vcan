@@ -16,27 +16,25 @@
 -->
 
   <div class="flex flex-col min-h-[100dvh]">
-    <header class="px-4 lg:px-6 h-14 flex items-center"
-      style="background-color: black; color: white; position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; border-radius: 5px 5px 5px 5px;">
+    <header class="px-4 lg:px-6 h-auto flex items-center justify-between bg-black text-white fixed top-0 left-0 w-full z-1000 border-radius" style="border-radius: 5px 5px 0 0;">
       <a class="flex items-center justify-center" href="#" rel="ugc">
-        <img src="VCAN.jpg" alt="" style="height: 50px; width: auto;">
+        <img src="VCAN.jpg" alt="VCAN logo" style="height: 50px; width: auto;">
       </a>
-      <nav class="ml-auto flex gap-4 sm:gap-6">
-        <a class="text-sm hover:underline underline-offset-4 text-white" href="/home.html" rel="ugc">
-          Home
-        </a>
-        <a class="text-sm font-medium hover:underline underline-offset-4 text-white" href="#" rel="ugc">
-          Volunteers
-        </a>
-        <a class="text-sm font-medium hover:underline underline-offset-4 text-white" href="#" rel="ugc">
-          NGOs
-        </a>
-        <a class="text-sm font-medium hover:underline underline-offset-4 text-white" href="/about.html" rel="ugc">
-          About
-        </a>
-        <a class="text-sm font-medium hover:underline underline-offset-4 text-white" href="#contact" rel="ugc">
-          Contact
-        </a>
+  
+      <!-- Hamburger Menu Button (visible on small screens) -->
+      <button class="block sm:hidden text-white focus:outline-none" onclick="toggleMenu()">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+  
+      <!-- Navigation Menu -->
+      <nav id="menu" class="hidden sm:flex sm:gap-6 flex-col sm:flex-row absolute sm:relative top-full sm:top-auto left-0 w-full sm:w-auto bg-black sm:bg-transparent text-white sm:space-x-0 sm:space-y-0 py-4 sm:py-0 space-y-4 sm:space-y-0 sm:items-center">
+        <a class="text-sm hover:underline underline-offset-4 text-white" href="/home.html" rel="ugc">Home</a>
+        <a class="text-sm font-medium hover:underline underline-offset-4 text-white" href="#" rel="ugc">Volunteers</a>
+        <a class="text-sm font-medium hover:underline underline-offset-4 text-white" href="#" rel="ugc">NGOs</a>
+        <a class="text-sm font-medium hover:underline underline-offset-4 text-white" href="/about.html" rel="ugc">About</a>
+        <a class="text-sm font-medium hover:underline underline-offset-4 text-white" href="#contact" rel="ugc">Contact</a>
       </nav>
     </header>
     <div style="margin-top: 56px;"></div>
@@ -262,6 +260,12 @@
     </div>
   </footer>
   </div>
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById('menu');
+      menu.classList.toggle('hidden');
+    }
+  </script>
 </body>
 
 </html>
