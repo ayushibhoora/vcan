@@ -114,26 +114,28 @@
         </section>
     </div>
     <footer id="contact" class="bg-black text-white py-6">
-        <div class="container mx-auto flex flex-col items-center justify-between px-4 sm:flex-row">
-            <div class="mb-4 text-center sm:mb-0">
-                <h2 class="text-xl font-bold">© 2024 VCAN. All rights reserved.</h2>
+        <div class="container mx-auto flex flex-col items-center justify-between px-4 md:flex-row">
+            <!-- Footer Logo & Description -->
+            <div class="text-center md:text-left md:mb-0 mb-4">
+                <h2 class="text-lg font-bold">© 2024 VCAN. All rights reserved.</h2>
                 <p class="mt-1 text-sm">Bringing you the best in tech and design</p>
             </div>
-            <div class="mb-4 flex flex-col items-center sm:mb-0 sm:flex-row">
-                <a href="#" class="mx-3 text-sm hover:text-gray-400">Home</a>
-                <a href="#" class="mx-3 text-sm hover:text-gray-400">Volunteers</a>
-                <a href="#" class="mx-3 text-sm hover:text-gray-400">NGOs</a>
-                <a href="#" class="mx-3 text-sm hover:text-gray-400">About</a>
+            <!-- Footer Navigation Links -->
+            <div class="flex flex-col items-center space-y-2 sm:flex-row sm:space-y-0 sm:space-x-6 mb-4 sm:mb-0">
+                <a href="#" class="text-sm hover:text-gray-400">Home</a>
+                <a href="#" class="text-sm hover:text-gray-400">Volunteers</a>
+                <a href="#" class="text-sm hover:text-gray-400">NGOs</a>
+                <a href="#" class="text-sm hover:text-gray-400">About</a>
             </div>
-            <div>
-                Contact Us <br> +91 1234567890, abc@gmail.com
+            <!-- Footer Contact Information -->
+            <div class="text-center md:text-right">
+                <p>Contact Us</p>
+                <p class="text-sm">+91 1234567890</p>
+                <p class="text-sm">abc@gmail.com</p>
             </div>
-            <br>
-            <!-- <div class="text-center text-sm">
-              <p>&copy; 2024 VCAN. All rights reserved.</p>
-            </div> -->
         </div>
     </footer>
+
     <script>
         function toggleMenu() {
             var menu = document.getElementById('menu');
