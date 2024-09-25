@@ -6,6 +6,10 @@ header{
   z-index: 1000; /* Higher than other elements */
 }
 /* ------------end of navbar --------------*/
+.body{
+  align-content: center;
+}
+
 #box {
   border-radius: 1rem;
 }
