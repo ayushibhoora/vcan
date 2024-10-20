@@ -34,7 +34,7 @@
         rel="ugc">About</a>
       <a class="text-sm font-medium hover:underline underline-offset-4 text-white" href="#contact"
         rel="ugc">Contact</a>
-      <a class="text-sm font-medium hover:underline underline-offset-4 text-white" href="/sign-in/signin.html"
+      <a class="text-sm font-medium hover:underline underline-offset-4 text-white" href="signup.html"
         rel="ugc">Login</a>
     </nav>
   </header>
@@ -43,7 +43,7 @@
   
     <div class="form-container">
         <p class="title">Login</p>
-        <form class="form">
+        <form class="form" action="" method="post">
             <div class="input-group">
                 <label for="username">Username</label>
                 <input type="text" name="username" id="username" placeholder="">
@@ -59,17 +59,17 @@
             <!-- Radio buttons for joining as Volunteer or NGO -->
             <div class="radios">
                 <div>
-                    <input type="radio" id="volunteer" name="join_as" value="volunteer">
+                    <input type="radio" id="volunteer" name="volunteer" value="volunteer">
                     <label for="volunteer" class="text-white">Join as Volunteer</label>
                 </div>
                 <div>
-                    <input type="radio" id="ngo" name="join_as" value="ngo">
+                    <input type="radio" id="ngo" name="ngo" value="ngo">
                     <label for="ngo" class="text-white">Join as NGO</label>
                 </div>
             </div>
 
 
-            <button class="sign">Sign in</button>
+            <button name="submit" class="sign">Sign in</button>
         </form>
         <div class="social-message">
             <div class="line"></div>
